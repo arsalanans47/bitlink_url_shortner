@@ -1,5 +1,5 @@
 "use client"
-import { Code } from 'mongodb';
+import Link from 'next/link'
 import React, { useState } from 'react';
 
 
@@ -57,9 +57,8 @@ return (
 
 
         </div>
-        {generated && <Code>
-            {generated}
-            </Code>}
+       {generated && <> <span className='font-bold text-lg'>Your Link </span><code><Link target="_blank" href={generated}>{generated}</Link> 
+                </code></>}
     </div>
 )
 }
