@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔗 Bitlinks – URL Shortener App
 
-## Getting Started
+Bitlinks is a modern and minimal URL shortener built with **Next.js 13 (App Router)**, **Tailwind CSS**, and **MongoDB**. It allows users to convert long, bulky URLs into short and manageable links using a simple and intuitive interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- ✂️ Shorten long URLs into custom aliases
+- 🔁 Automatically redirect from short URL to original
+- 💅 Clean and responsive UI using Tailwind CSS
+- 🧠 Built with React 19 and Next.js App Router
+- 💾 Persistent link storage with MongoDB
+- 🧩 Component-based design with `Navbar`, form, and pages
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [PostCSS](https://postcss.org/)
+
+---
+
+## 📁 Folder Structure
+
+```
+bitlinks/
+├── app/                      # Next.js app directory
+│   ├── api/generate/         # API to generate short URLs
+│   ├── shorten/              # Page to enter a URL and shorten
+│   ├── [shorturl]/           # Dynamic route for redirecting
+│   ├── layout.js             # Root layout
+│   └── page.js               # Home page
+├── components/
+│   └── Navbar.js             # Navigation bar
+├── lib/
+│   └── mongodb.js            # MongoDB connection helper
+├── public/                   # Static assets
+├── .env.local                # Environment variables
+├── tailwind.config.js        # Tailwind CSS config
+├── postcss.config.mjs        # PostCSS config
+├── package.json              # Scripts and dependencies
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To run this project locally:
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/arsalanans47/bitlink_url_shortner.git
+   cd bitlink_url_shortner
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Create a `.env.local` file**
+   ```
+   MONGODB_URI=mongodb://localhost:27017
+   NEXT_PUBLIC_HOST=http://localhost:3000
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> _Add these images to your `/screenshots` folder and reference them properly if uploading to GitHub._
+
+![Landing Page](./screenshots/hero.png)
+![Shorten Page](./screenshots/shorten.png)
+
+---
+
+## 💡 Future Enhancements
+
+- 📊 Add click tracking and analytics
+- 🔐 Implement authentication for custom link dashboards
+- 📆 Link expiration support
+- 📱 Enhance mobile responsiveness
+
+---
+
+## 🙋‍♂️ Author
+
+**Made with ❤️ by [Arsalan Ayub]**  
+- GitHub: [github.com/arsalanans47](https://github.com/arsalanans47)  
+- LinkedIn: [linkedin.com/in/arsalan47](https://www.linkedin.com/in/arsalan47/)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. Feel free to use it, modify it, and learn from it!
