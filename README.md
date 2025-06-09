@@ -79,10 +79,9 @@ To run this project locally:
 
 ## 📸 Screenshots
 
-> _Add these images to your `/screenshots` folder and reference them properly if uploading to GitHub._
 
 ![Landing Page](https://github.com/arsalanans47/bitlink_url_shortner/blob/c98fd8cc7d6cdce03d2ad7f35758631878fd78df/landing%20page.png)
-![Shorten Page](./screenshots/shorten.png)
+![Shorten Page](https://github.com/arsalanans47/bitlink_url_shortner/blob/3416502cbeee45e6bb12bfe8693843e4e3496d61/shorten%20page.png)
 
 ---
 
